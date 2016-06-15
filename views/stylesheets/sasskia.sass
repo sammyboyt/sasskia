@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Taviraj:400i')
+
+$taviraj-font: 'Taviraj', serif
+$fjalla-font: 'Fjalla One', sans-serif
+$theme-color: #3C063A
+$hover-color: #FF5733
+$header-size: 50px
+$header-size-sm: 35px
+
+
+html
+   height: auto
+   
+body
+   background: linear-gradient(350deg, $theme-color 5%, white 40%)
+   height: 100%
+
+nav 
+   font-family: $taviraj-font
+   @media screen and (max-width: 568px)
+      margin-bottom: 0px !important
+   
+.sasskia-head
+   margin-top: -20px
+   background-image: url("../images/Chrysanthemum.jpg")
+   background-repeat: no-repeat
+   background-size: cover
+   height: 80%
+   opacity: .95
+   color: #fff
+   font-family: $taviraj-font
+   text-shadow: 3px 5px 5px $theme-color
+
+   > h1
+      font-size: 75px
+      text-align: center
+      margin: 0px
+      padding-top: 20%
+   
+   > p
+      text-align: center
+      font-size: 20px
+      padding-bottom: 20%
+
+.sasskia-content
+   margin-top: -50px
+   z-index: 4
+   font-family: $fjalla-font
+   color: $theme-color
+   text-align: center
+   
+.sasskia-about
+   background-color: #FFFFFF
+   opacity: 0.95
+   padding: 30px
+   box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1)
+   border-radius: 5px
+   
+h1.sasskia-text
+   text-shadow: 0px 4px 4px lighten($theme-color, 15%)
+   font-size: $header-size/sqrt1
+   @media screen and (max-width: 568px)
+      font-size: 30px
+   
+h2.sasskia-text
+   text-shadow: 0px 3px 3px lighten($theme-color, 20%)
+   font-size: $header-size/sqrt2
+   @media screen and (max-width: 568px)
+      font-size: 25px
+      
+h3.sasskia-text
+   text-shadow: 0px 2px 2px lighten($theme-color, 30%)
+   font-size: $header-size/sqrt3
+   @media screen and (max-width: 568px)
+      font-size: 20px
+      
+h4.sasskia-text
+   text-shadow: 0px 2px 2px lighten($theme-color, 40%)
+   font-size: $header-size/sqrt4
+   @media screen and (max-width: 568px)
+      font-size: 17px
+      
+h5.sasskia-text
+   text-shadow: 0px 2px 2px lighten($theme-color, 50%)
+   font-size: $header-size/sqrt5
+   @media screen and (max-width: 568px)
+      font-size: 12px
+      
+h6.sasskia-text
+   text-shadow: 0px 2px 2px lighten($theme-color, 60%)
+   font-size: $header-size/sqrt6
+   @media screen and (max-width: 568px)
+      font-size: 10px
+   
+.sasskia-btn
+   border-style: solid
+   border-radius: 2px
+   border-color: $hover-color
+   background-color: #4F1E4D
+   color: $hover-color
+   
+.sasskia-btn:hover
+   border-color: $theme-color
+   background-color: $hover-color
+   color: $theme-color
+   
+.sasskia-footer
+   text-align: center
+   font-family: $taviraj-font
+   color: white
+   
+.nav > li 
+   @media screen and (max-width: 568px)
+      display: none !important
+   > a
+      color: $theme-color
+   
+a:hover
+   color: $hover-color !important
+   
